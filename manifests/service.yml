@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: vicenteherreramicroservicesdemo
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 9555 
+    selector:
+        app: vicenteherreramicroservicesdemo
