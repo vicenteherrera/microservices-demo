@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: vicenteherreramicroservicesdemo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vicenteherreramicroservicesdemo 
+    spec:
+      containers:
+        - name: vicenteherreramicroservicesdemo 
+          image: sysreg.azurecr.io/vicenteherreramicroservicesdemo 
+          ports:
+          - containerPort: 9555
